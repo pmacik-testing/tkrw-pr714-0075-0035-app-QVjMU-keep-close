@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-yroz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0035-tenant/tkrw-pr714-0075-0035-app/devfile-sample-yroz@sha256:8644adce599ef482c2b8bfe65a14c8e2538e54c3818c04ea9c83fcb5e6328f69
+        name: my-nodejs
+        resources: {}
+status: {}
